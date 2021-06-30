@@ -1,8 +1,7 @@
 document.addEventListener('keydown', event => {
   if (event.ctrlKey && event.key === "/") {
     /*
-      This predicate function needs to be more comprehensive - right now it doesn't
-      work on facebook. 
+      This predicate function needs to be more comprehensive - 
       
       - What are other ways for things to be marked as a searchbar?
       - Should I save the original, unfiltered array and use it for subsequent searches?
@@ -26,10 +25,7 @@ document.addEventListener('keydown', event => {
       }
     }
 
-    // use aria-label in some way? Above doesn't work on Amazon right now
-
-    // strange bug on bbref - i think they manually clear the value on click. 
-    
+    // strange bug on bbref - i think they manually clear the value on click.   
 
     if (target !== undefined && target !== null) {
       if (document.activeElement !== target) {
